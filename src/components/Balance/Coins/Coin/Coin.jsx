@@ -6,7 +6,7 @@ function Coin({ balance, name, special }) {
   return (
     <div className='coin'>
       <div className='coinInner'>
-        <p className={`balance ${special && "special"}`}>{balance}</p>
+        <p className='balance special'>{balance}</p>
       </div>
       <div className={`coinName ${special && "special"}`}>
         {name}
