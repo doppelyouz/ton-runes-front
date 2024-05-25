@@ -1,6 +1,16 @@
+import Username from './components/Username'
+import Balance from './components/Balance'
+
+import './App.css'
+
 function App() {
   return (
-    <p>hello</p>
+    <div className='container'>
+      <div className='innerContainer'>
+        <Username />
+        <Balance />
+      </div>
+    </div>
   )
 }
 
