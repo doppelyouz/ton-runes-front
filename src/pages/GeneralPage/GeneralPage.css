@@ -1,0 +1,324 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.backgroundWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.backgroundWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.innerContainer {
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+.baseWrapper {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.baseWrapper img {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.runeMiddleWrapper {
+    position: absolute;
+    top: 23.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 16%;
+}
+
+.runeMiddleWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rune1Wrapper {
+    position: absolute;
+    top: 13%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 13%;
+}
+
+.rune1Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rune2Wrapper {
+    position: absolute;
+    top: 13%;
+    right: 6%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 13%;
+}
+
+.rune2Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rune3Wrapper {
+    position: absolute;
+    top: 34%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 13%;
+}
+
+.rune3Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rune4Wrapper {
+    position: absolute;
+    top: 34.5%;
+    right: 6%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 13%;
+}
+
+.rune4Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.inviteWrapper {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 85%;
+}
+
+.inviteWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.shopWrapper {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 85%;
+}
+
+.shopWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.manaWrapper {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.manaWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.manaAddWrapper {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    z-index: 2;
+    width: 23%;
+}
+
+.manaText {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 400px) {
+    .manaText {
+        font-size: 20px;
+        bottom: 52%;
+    }
+}
+
+@media (max-width: 350px) {
+    .manaText {
+        font-size: 17px;
+        bottom: 55%;
+    }
+}
+
+.progressBar {
+    position: absolute;
+    bottom: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 70%;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.barContainerClassName {
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.profileIconWrapper {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    z-index: 2;
+    width: 15%;
+}
+
+.profileIconWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.questionWrapper {
+    position: absolute;
+    top: 2%;
+    right: 19%;
+    z-index: 2;
+    width: 10%;
+}
+
+.questionWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.balanceFigure1Wrapper {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 40%;
+    z-index: 3;
+}
+
+.balanceFigure1Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.balanceFigure2Wrapper {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    width: 30%;
+    z-index: 2;
+}
+
+.balanceFigure2Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.addWrapper {
+    position: absolute;
+    top: 2%;
+    left: 32.8%;
+    width: 10%;
+    z-index: 4;
+}
+
+.addWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.tonBalance {
+    position: absolute;
+    top: 3.5%;
+    left: 6%;
+    z-index: 4;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.fehuBalance {
+    position: absolute;
+    top: 8.5%;
+    left: 6%;
+    z-index: 4;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+@media (max-width: 430px) {
+    .fehuBalance {
+        top: 8.2%;
+        font-size: 14px;
+    }
+    .tonBalance {
+        /* top: 3%; */
+        font-size: 18px;
+    }
+}
+@media (max-width: 400px) {
+    .fehuBalance {
+        top: 7.7%;
+    }
+}
+@media (max-width: 360px) {
+    .fehuBalance {
+        top: 7.4%;
+    }
+}
