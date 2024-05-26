@@ -12,18 +12,23 @@ function GeneralPage() {
         <div className="runeMiddleWrapper">
           <img src="/src/assets/GeneralPage/rune middle.png" alt="" />
         </div>
+        <p className="runeMiddleTime">7:59</p>
         <div className="rune1Wrapper">
           <img src="/src/assets/GeneralPage/rune 1.png" alt="" />
         </div>
+        <p className="rune1Time">7:59</p>
         <div className="rune2Wrapper">
           <img src="/src/assets/GeneralPage/rune 2.png" alt="" />
         </div>
+        <p className="rune2Time">7:59</p>
         <div className="rune3Wrapper">
           <img src="/src/assets/GeneralPage/rune 3.png" alt="" />
         </div>
+        <p className="rune3Time">7:59</p>
         <div className="rune4Wrapper">
           <img src="/src/assets/GeneralPage/rune 4.png" alt="" />
         </div>
+        <p className="rune4Time">7:59</p>
         <div className="inviteWrapper">
           <img src="/src/assets/GeneralPage/inviteFriends.png" alt="" />
         </div>
