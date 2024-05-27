@@ -8,13 +8,13 @@ import './ProfilePage.css'
 function ProfilePage() {
   return (
     <div className="container">
-      <div className="innerContainer">
-        <div className="mainContent">
+      <div className="innerContainerProfile">
+        <div className="mainContentProfile">
           <Username />
           <Balance />
           <Presale />
         </div>
-        <GoBackButton />
+        <GoBackButton link />
       </div>
     </div>
   )

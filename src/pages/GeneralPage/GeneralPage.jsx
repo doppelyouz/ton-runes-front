@@ -1,9 +1,10 @@
 import { useCallback, useState } from "react";
+import ShopDrawer from "../../components/drawers/ShopDrawer/ShopDrawer";
+import { Link } from "react-router-dom";
 import ProgressBar from "@ramonak/react-progress-bar";
 import InviteFriendsDrawer from "../../components/drawers/InviteFriendsDrawer";
 
 import "./GeneralPage.css";
-import ShopDrawer from "../../components/drawers/ShopDrawer/ShopDrawer";
 
 function GeneralPage() {
   const [isOpenInvite, setIsOpenInvite] = useState(false);
@@ -82,6 +83,7 @@ function GeneralPage() {
       </div>
       <div className="profileIconWrapper">
         <img src="/src/assets/GeneralPage/profileIcon.png" alt="" />
+        <Link to="/profile" className='link' />
       </div>
       <div className="questionWrapper">
         <img src="/src/assets/GeneralPage/question.png" alt="" />
