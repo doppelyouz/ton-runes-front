@@ -1,14 +1,16 @@
 import { useCallback, useState } from "react";
-import ShopDrawer from "../../components/drawers/ShopDrawer/ShopDrawer";
+import ShopDrawer from "../../components/drawers/ShopDrawer";
 import { Link } from "react-router-dom";
 import ProgressBar from "@ramonak/react-progress-bar";
 import InviteFriendsDrawer from "../../components/drawers/InviteFriendsDrawer";
+import ManaDrawer from "../../components/drawers/ManaDrawer";
 
 import "./GeneralPage.css";
 
 function GeneralPage() {
   const [isOpenInvite, setIsOpenInvite] = useState(false);
   const [isOpenShop, setIsOpenShop] = useState(false);
+  const [isOpenMana, setIsOpenMana] = useState(false);
 
   const toggleInviteFriendsDrawer = useCallback(() => {
     setIsOpenInvite((prevState) => !prevState);
@@ -17,6 +19,11 @@ function GeneralPage() {
   const toggleShopDrawer = useCallback(() => {
     setIsOpenShop((prevState) => !prevState);
   }, []);
+
+  const toggleManaDrawer = useCallback(() => {
+    setIsOpenMana((prevState) => !prevState);
+  }, []);
+
 
   return (
     <div className="container">
@@ -60,7 +67,7 @@ function GeneralPage() {
         </button>
         <div className="manaWrapper">
           <img src="/src/assets/GeneralPage/mana.png" alt="" />
-          <button className="manaAddWrapper">
+          <button className="manaAddWrapper" onClick={toggleManaDrawer}>
             <img src="/src/assets/GeneralPage/add.png" alt="" />
           </button>
           <div className="content">
@@ -104,6 +111,7 @@ function GeneralPage() {
         toggleDrawer={toggleInviteFriendsDrawer}
       />
       <ShopDrawer isOpen={isOpenShop} toggleDrawer={toggleShopDrawer} />
+      <ManaDrawer isOpen={isOpenMana} toggleDrawer={toggleManaDrawer} />
     </div>
   );
 }
