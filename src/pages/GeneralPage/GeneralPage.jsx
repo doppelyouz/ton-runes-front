@@ -1,8 +1,16 @@
+import { useCallback, useState } from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
+import InviteFriendsDrawer from "../../components/drawers/InviteFriendsDrawer";
 
 import "./GeneralPage.css";
 
 function GeneralPage() {
+  const [isOpenInvite, setIsOpenInvite] = useState(false);
+  const toggleInviteFriendsDrawer = useCallback(() => {
+    console.log("toggleInviteFriendsDrawer");
+    setIsOpenInvite((prevState) => !prevState);
+  }, []);
+
   return (
     <div className="container">
       <div className="innerContainer">
@@ -29,9 +37,13 @@ function GeneralPage() {
           <img src="/src/assets/GeneralPage/rune 4.png" alt="" />
         </div>
         <p className="rune4Time">7:59</p>
-        <div className="inviteWrapper">
+        <button
+          type="button"
+          onClick={toggleInviteFriendsDrawer}
+          className="inviteWrapper"
+        >
           <img src="/src/assets/GeneralPage/inviteFriends.png" alt="" />
-        </div>
+        </button>
         <div className="shopWrapper">
           <img src="/src/assets/GeneralPage/shop.png" alt="" />
         </div>
@@ -75,6 +87,7 @@ function GeneralPage() {
       </div>
       <p className="tonBalance">0.02 ton</p>
       <p className="fehuBalance">100 $fehu</p>
+      <InviteFriendsDrawer isOpenInvite={isOpenInvite} toggleInviteFriendsDrawer={toggleInviteFriendsDrawer} />
     </div>
   );
 }

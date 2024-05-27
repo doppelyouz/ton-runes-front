@@ -1,6 +1,7 @@
 import Username from '../../components/Username'
 import Balance from '../../components/Balance'
 import Presale from '../../components/Presale'
+import GoBackButton from '../../components/GoBackButton'
 
 import './ProfilePage.css'
 
@@ -13,7 +14,7 @@ function ProfilePage() {
           <Balance />
           <Presale />
         </div>
-        <button className='goBack'>&lt; Go back</button>
+        <GoBackButton />
       </div>
     </div>
   )

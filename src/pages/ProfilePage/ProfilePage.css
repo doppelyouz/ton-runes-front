@@ -20,17 +20,3 @@
     flex-direction: column;
     align-items: center;
 }
-
-.goBack {
-    justify-self: flex-end;
-
-    color: white;
-    font-size: 30px;
-    letter-spacing: 3px;
-
-    text-shadow:
-    -2px -2px 0 #496274,  
-    2px -2px 0 #496274,
-    -2px  2px 0 #496274,
-    2px  2px 0 #496274;
-}

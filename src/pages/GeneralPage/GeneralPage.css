@@ -302,21 +302,25 @@
     color: white;
     text-transform: uppercase;
 }
+
 @media (max-width: 430px) {
     .fehuBalance {
         top: 8.2%;
         font-size: 14px;
     }
+
     .tonBalance {
         /* top: 3%; */
         font-size: 18px;
     }
 }
+
 @media (max-width: 400px) {
     .fehuBalance {
         top: 7.7%;
     }
 }
+
 @media (max-width: 360px) {
     .fehuBalance {
         top: 7.4%;
@@ -334,12 +338,12 @@
     color: white;
     text-transform: uppercase;
 
-    
+
     text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
 }
 
 .rune1Time {
@@ -352,12 +356,12 @@
     color: white;
     text-transform: uppercase;
 
-    
+
     text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
 }
 
 .rune2Time {
@@ -370,12 +374,12 @@
     color: white;
     text-transform: uppercase;
 
-    
+
     text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
 }
 
 .rune3Time {
@@ -388,12 +392,12 @@
     color: white;
     text-transform: uppercase;
 
-    
+
     text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
 }
 
 .rune4Time {
@@ -406,27 +410,31 @@
     color: white;
     text-transform: uppercase;
 
-    
+
     text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
 }
 
 @media (max-width: 360px) {
     .rune1Time {
         font-size: 15px;
     }
+
     .rune2Time {
         font-size: 15px;
     }
+
     .rune3Time {
         font-size: 15px;
     }
+
     .rune4Time {
         font-size: 15px;
     }
+
     .runeMiddleTime {
         font-size: 18px;
     }
