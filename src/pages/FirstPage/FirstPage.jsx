@@ -2,7 +2,7 @@ import './FirstPage.css';
 
 function FirstPage() {
   return (
-    <div className='container'>
+    <div className='containerFirstPage'>
         <div className='backgroundWrapper'>
             <img src="/src/assets/FirstPage/background.png" alt="" />
         </div>
