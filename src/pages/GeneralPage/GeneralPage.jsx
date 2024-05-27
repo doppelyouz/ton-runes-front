@@ -3,12 +3,18 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import InviteFriendsDrawer from "../../components/drawers/InviteFriendsDrawer";
 
 import "./GeneralPage.css";
+import ShopDrawer from "../../components/drawers/ShopDrawer/ShopDrawer";
 
 function GeneralPage() {
   const [isOpenInvite, setIsOpenInvite] = useState(false);
+  const [isOpenShop, setIsOpenShop] = useState(false);
+
   const toggleInviteFriendsDrawer = useCallback(() => {
-    console.log("toggleInviteFriendsDrawer");
     setIsOpenInvite((prevState) => !prevState);
+  }, []);
+
+  const toggleShopDrawer = useCallback(() => {
+    setIsOpenShop((prevState) => !prevState);
   }, []);
 
   return (
@@ -44,9 +50,13 @@ function GeneralPage() {
         >
           <img src="/src/assets/GeneralPage/inviteFriends.png" alt="" />
         </button>
-        <div className="shopWrapper">
+        <button
+          type="button"
+          onClick={toggleShopDrawer}
+          className="shopWrapper"
+        >
           <img src="/src/assets/GeneralPage/shop.png" alt="" />
-        </div>
+        </button>
         <div className="manaWrapper">
           <img src="/src/assets/GeneralPage/mana.png" alt="" />
           <button className="manaAddWrapper">
@@ -87,7 +97,11 @@ function GeneralPage() {
       </div>
       <p className="tonBalance">0.02 ton</p>
       <p className="fehuBalance">100 $fehu</p>
-      <InviteFriendsDrawer isOpenInvite={isOpenInvite} toggleInviteFriendsDrawer={toggleInviteFriendsDrawer} />
+      <InviteFriendsDrawer
+        isOpen={isOpenInvite}
+        toggleDrawer={toggleInviteFriendsDrawer}
+      />
+      <ShopDrawer isOpen={isOpenShop} toggleDrawer={toggleShopDrawer} />
     </div>
   );
 }

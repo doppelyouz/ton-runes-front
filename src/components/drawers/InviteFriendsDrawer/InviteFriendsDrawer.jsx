@@ -1,28 +1,24 @@
-
 import Drawer from "react-modern-drawer";
-import GoBackButton from '../../GoBackButton'
-import PropTypes from 'prop-types';
+import GoBackButton from "../../GoBackButton";
+import PropTypes from "prop-types";
 import handleCopy from "../../../utils/handleCopy";
 
-import './InviteFriendsDrawer.css'
+import "./InviteFriendsDrawer.css";
 
-function InviteFriendsDrawer({ isOpenInvite, toggleInviteFriendsDrawer}) {
+function InviteFriendsDrawer({ isOpen, toggleDrawer }) {
   return (
     <Drawer
-      open={isOpenInvite}
-      onClose={toggleInviteFriendsDrawer}
+      open={isOpen}
+      onClose={toggleDrawer}
       direction="bottom"
       zIndex={100}
       size={"78%"}
       className="inviteDrawer"
       overlayColor={"rgba(0,0,0,0.5)"}
     >
-      <div className="drawer">
+      <div className="inviteFriendsDrawer">
         <div className="drawerTitleWrapper">
-          <img
-            src="/src/assets/GeneralPage/inviteFriendsNoShadow.png"
-            alt=""
-          />
+          <img src="/src/assets/GeneralPage/inviteFriendsNoShadow.png" alt="" />
         </div>
         <div className="desc">
           <p className="descText">
@@ -44,16 +40,15 @@ function InviteFriendsDrawer({ isOpenInvite, toggleInviteFriendsDrawer}) {
             </button>
           </div>
         </div>
-        <GoBackButton onClick={toggleInviteFriendsDrawer}/>
+        <GoBackButton onClick={toggleDrawer} />
       </div>
     </Drawer>
-  )
+  );
 }
 
 InviteFriendsDrawer.propTypes = {
-    isOpenInvite: PropTypes.bool.isRequired,
-    toggleInviteFriendsDrawer: PropTypes.func.isRequired,
-  };
-  
+  isOpen: PropTypes.bool.isRequired,
+  toggleDrawer: PropTypes.func.isRequired,
+};
 
-export default InviteFriendsDrawer
+export default InviteFriendsDrawer;
