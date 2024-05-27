@@ -4,11 +4,11 @@
 
 .manaBalanceText {
     position: absolute;
-    bottom: 50%;
+    bottom: 53%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 2px;
 }
 

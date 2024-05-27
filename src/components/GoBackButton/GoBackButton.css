@@ -2,6 +2,8 @@
 .goBack {
     position: relative;
     margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 30px;
 
     color: white;
     font-size: 30px;

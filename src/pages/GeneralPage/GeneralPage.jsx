@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ProgressBar from "@ramonak/react-progress-bar";
 import InviteFriendsDrawer from "../../components/drawers/InviteFriendsDrawer";
 import ManaDrawer from "../../components/drawers/ManaDrawer";
+import StoryDrawer from "../../components/drawers/StoryDrawer";
 
 import "./GeneralPage.css";
 
@@ -11,6 +12,7 @@ function GeneralPage() {
   const [isOpenInvite, setIsOpenInvite] = useState(false);
   const [isOpenShop, setIsOpenShop] = useState(false);
   const [isOpenMana, setIsOpenMana] = useState(false);
+  const [isOpenStory, setIsOpenStory] = useState(false);
 
   const toggleInviteFriendsDrawer = useCallback(() => {
     setIsOpenInvite((prevState) => !prevState);
@@ -24,6 +26,9 @@ function GeneralPage() {
     setIsOpenMana((prevState) => !prevState);
   }, []);
 
+  const toggleStoryDrawer = useCallback(() => {
+    setIsOpenStory((prevState) => !prevState);
+  }, []);
 
   return (
     <div className="container">
@@ -90,11 +95,15 @@ function GeneralPage() {
       </div>
       <div className="profileIconWrapper">
         <img src="/src/assets/GeneralPage/profileIcon.png" alt="" />
-        <Link to="/profile" className='link' />
+        <Link to="/profile" className="link" />
       </div>
-      <div className="questionWrapper">
+      <button
+        type="button"
+        onClick={toggleStoryDrawer}
+        className="questionWrapper"
+      >
         <img src="/src/assets/GeneralPage/question.png" alt="" />
-      </div>
+      </button>
       <div className="balanceFigure1Wrapper">
         <img src="/src/assets/GeneralPage/balanceFigure1.png" alt="" />
       </div>
@@ -112,6 +121,7 @@ function GeneralPage() {
       />
       <ShopDrawer isOpen={isOpenShop} toggleDrawer={toggleShopDrawer} />
       <ManaDrawer isOpen={isOpenMana} toggleDrawer={toggleManaDrawer} />
+      <StoryDrawer isOpen={isOpenStory} toggleDrawer={toggleStoryDrawer} />
     </div>
   );
 }
