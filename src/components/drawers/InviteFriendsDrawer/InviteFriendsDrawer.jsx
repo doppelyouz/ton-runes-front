@@ -3,6 +3,9 @@ import GoBackButton from "../../GoBackButton";
 import PropTypes from "prop-types";
 import handleCopy from "../../../utils/handleCopy";
 
+import inviteFriendsNoShadow from "/src/assets/GeneralPage/inviteFriendsNoShadow.png";
+import copy from "/src/assets/GeneralPage/copy.png";
+
 import "./InviteFriendsDrawer.css";
 
 function InviteFriendsDrawer({ isOpen, toggleDrawer }) {
@@ -12,13 +15,13 @@ function InviteFriendsDrawer({ isOpen, toggleDrawer }) {
       onClose={toggleDrawer}
       direction="bottom"
       zIndex={100}
-      size={"78%"}
+      size="fit-content"
       className="inviteDrawer"
       overlayColor={"rgba(0,0,0,0.5)"}
     >
       <div className="inviteFriendsDrawer">
         <div className="drawerTitleWrapper">
-          <img src="/src/assets/GeneralPage/inviteFriendsNoShadow.png" alt="" />
+          <img src={inviteFriendsNoShadow} alt="" />
         </div>
         <div className="desc">
           <p className="descText">
@@ -36,7 +39,7 @@ function InviteFriendsDrawer({ isOpen, toggleDrawer }) {
               www.T.me/starwwww.T.me/starwww.T.me/star
             </p>
             <button className="copyButton" onClick={handleCopy}>
-              <img src="/src/assets/GeneralPage/copy.png" alt="" />
+              <img src={copy} alt="" />
             </button>
           </div>
         </div>

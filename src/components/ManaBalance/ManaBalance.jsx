@@ -1,12 +1,14 @@
 import ProgressBar from "@ramonak/react-progress-bar";
 import PropTypes from "prop-types";
 
+import mana from '/src/assets/GeneralPage/mana.png';
+
 import "./ManaBalance.css";
 
 function ManaBalance({ className }) {
   return (
     <div className={`manaContainerWrapper ${className}`}>
-      <img src="/src/assets/GeneralPage/mana.png" alt="" />
+      <img src={mana} alt="" />
       <div className="content">
         <p className="manaBalanceText">Mana</p>
         <ProgressBar

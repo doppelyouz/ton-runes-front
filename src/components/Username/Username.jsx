@@ -1,10 +1,11 @@
+import avatar from '/src/assets/ProfilePage/avatar.png';
 import './Username.css'
 
 function Username() {
   return (
     <div className='usernameContainer'>
         <div className='avatarWrapper'>
-            <img src="/src/assets/ProfilePage/avatar.png" alt="" />
+            <img src={avatar} alt="" />
         </div>
         <p className='usernameText'>Username</p>
     </div>

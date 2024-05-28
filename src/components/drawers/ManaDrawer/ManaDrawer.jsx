@@ -2,6 +2,7 @@ import Drawer from "react-modern-drawer";
 import GoBackButton from "../../GoBackButton";
 import PropTypes from "prop-types";
 import ManaBalance from "../../ManaBalance";
+import buyMana from '/src/assets/GeneralPage/buyMana.png';
 
 import "./ManaDrawer.css";
 
@@ -12,7 +13,7 @@ function ManaDrawer({ isOpen, toggleDrawer }) {
       onClose={toggleDrawer}
       direction="bottom"
       zIndex={100}
-      size={"80%"}
+      size="fit-content"
       className="manaDrawerContainer"
       overlayColor={"rgba(0,0,0,0.5)"}
     >
@@ -36,7 +37,7 @@ function ManaDrawer({ isOpen, toggleDrawer }) {
             Вы можете восполнить ману купив её
           </h2>
           <button className='buyManaWrapper'>
-            <img src="/src/assets/GeneralPage/buyMana.png" alt="" />
+            <img src={buyMana} alt="" />
           </button>
         </div>
         <GoBackButton onClick={toggleDrawer} />

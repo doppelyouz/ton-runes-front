@@ -19,14 +19,19 @@ function App() {
   }, []);
 
   return (
-    <>
-      {loading && <FirstPage />}
-      <Routes>
-        <Route path="/" element={<GeneralPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
-      </Routes>
-      <ToastContainer />
-    </>
+    <div className="app">
+      {loading ? (
+        <FirstPage />
+      ) : (
+        <>
+          <Routes>
+            <Route path="/" element={<GeneralPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+          </Routes>
+          <ToastContainer />
+        </>
+      )}
+    </div>
   );
 }
 

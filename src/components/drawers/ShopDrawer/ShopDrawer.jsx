@@ -12,8 +12,8 @@ function ShopDrawer({ isOpen, toggleDrawer }) {
       onClose={toggleDrawer}
       direction="bottom"
       zIndex={100}
-      size={"85%"}
-      className="inviteDrawer"
+      size="fit-content"
+      className="shopDrawer"
       overlayColor={"rgba(0,0,0,0.5)"}
     >
       <div className="drawer">

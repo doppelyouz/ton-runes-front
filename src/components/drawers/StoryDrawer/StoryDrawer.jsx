@@ -11,7 +11,7 @@ function StoryDrawer({ isOpen, toggleDrawer }) {
       onClose={toggleDrawer}
       direction="bottom"
       zIndex={100}
-      size={"80%"}
+      size="fit-content"
       className="storyDrawerContainer"
       overlayColor={"rgba(0,0,0,0.5)"}
     >
