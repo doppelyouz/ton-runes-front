@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import back from '/src/assets/common/back.png';
 
 import "./GoBackButton.css";
 
 function GoBackButton({ onClick, link }) {
   return (
     <button className="goBack" onClick={onClick}>
-      &lt; Go back
+      <img src={back} alt="" />
       {link && <Link to="/" className="link" />}
     </button>
   );

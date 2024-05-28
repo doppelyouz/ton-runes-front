@@ -26,12 +26,12 @@ function ShopDrawer({ isOpen, toggleDrawer }) {
               {item.count} TON
             </p>
             <div className="main">
-              <div className='profileText'>Profit</div>
+              <div className='profileText'>PROFIT</div>
               {item.profitTon > 0 && <div className='profitTon '>+{item.profitTon} TON</div>}
               <div className='profitFehu'>+{item.profitFehu} FEHU</div>
             </div>
             <button className="buy">
-              Buy
+              BUY
             </button>
           </div> 
         ))}

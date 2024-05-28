@@ -4,7 +4,7 @@
 
 .manaBalanceText {
     position: absolute;
-    bottom: 53%;
+    bottom: 55%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
