@@ -11,9 +11,9 @@ function StoryDrawer({ isOpen, toggleDrawer }) {
       onClose={toggleDrawer}
       direction="bottom"
       zIndex={100}
-      size="fit-content"
       className="storyDrawerContainer"
       overlayColor={"rgba(0,0,0,0.5)"}
+      size="auto"
     >
       <div className="storyDrawer">
         <h1 className="storyTitle">Легенда гласит:</h1>

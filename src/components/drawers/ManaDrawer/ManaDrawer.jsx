@@ -2,7 +2,7 @@ import Drawer from "react-modern-drawer";
 import GoBackButton from "../../GoBackButton";
 import PropTypes from "prop-types";
 import ManaBalance from "../../ManaBalance";
-import buyMana from '/src/assets/GeneralPage/buyMana.png';
+import buyMana from "/src/assets/GeneralPage/buyMana.png";
 
 import "./ManaDrawer.css";
 
@@ -13,7 +13,7 @@ function ManaDrawer({ isOpen, toggleDrawer }) {
       onClose={toggleDrawer}
       direction="bottom"
       zIndex={100}
-      size="fit-content"
+      size="auto"
       className="manaDrawerContainer"
       overlayColor={"rgba(0,0,0,0.5)"}
     >
@@ -33,10 +33,8 @@ function ManaDrawer({ isOpen, toggleDrawer }) {
               превращения рунного камня в тон увеличивается на 1 час.
             </p>
           </div>
-          <h2 className='buyManaTitle'>
-            Вы можете восполнить ману купив её
-          </h2>
-          <button className='buyManaWrapper'>
+          <h2 className="buyManaTitle">Вы можете восполнить ману купив её</h2>
+          <button className="buyManaWrapper">
             <img src={buyMana} alt="" />
           </button>
         </div>

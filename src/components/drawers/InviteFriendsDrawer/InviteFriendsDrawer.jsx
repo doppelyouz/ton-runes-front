@@ -15,7 +15,7 @@ function InviteFriendsDrawer({ isOpen, toggleDrawer }) {
       onClose={toggleDrawer}
       direction="bottom"
       zIndex={100}
-      size="fit-content"
+      size="auto"
       className="inviteDrawer"
       overlayColor={"rgba(0,0,0,0.5)"}
     >
