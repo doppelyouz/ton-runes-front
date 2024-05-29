@@ -30,10 +30,12 @@
     position: relative;
     bottom: 0;
     left: 0;
+    height: auto;
+    right: 0;
     width: 100%;
-    height: 100%;
     z-index: 1;
 }
+
 
 .baseWrapper img {
     width: 100%;
@@ -44,11 +46,11 @@
 
 .runeMiddleWrapper {
     position: absolute;
-    top: 23.5%;
+    top: 24.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    height: 16%;
+    height: 18%;
 }
 
 .runeMiddleWrapper img {
@@ -63,7 +65,7 @@
     left: 19%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    height: 13%;
+    height: 14%;
 }
 
 .rune1Wrapper img {
@@ -75,10 +77,10 @@
 .rune2Wrapper {
     position: absolute;
     top: 13%;
-    right: 6%;
+    right: 7%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    height: 13%;
+    height: 14%;
 }
 
 .rune2Wrapper img {
@@ -93,7 +95,7 @@
     left: 19%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    height: 13%;
+    height: 14%;
 }
 
 .rune3Wrapper img {
@@ -105,10 +107,10 @@
 .rune4Wrapper {
     position: absolute;
     top: 34.5%;
-    right: 6%;
+    right: 6.5%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    height: 13%;
+    height: 14%;
 }
 
 .rune4Wrapper img {
@@ -119,7 +121,7 @@
 
 .inviteWrapper {
     position: absolute;
-    bottom: 3%;
+    bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -176,7 +178,7 @@
 
 .manaText {
     position: absolute;
-    bottom: 50%;
+    bottom: 52%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -184,17 +186,10 @@
     letter-spacing: 2px;
 }
 
-@media (max-width: 400px) {
-    .manaText {
-        font-size: 20px;
-        bottom: 52%;
-    }
-}
-
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .manaText {
         font-size: 17px;
-        bottom: 55%;
+        bottom: 56%;
     }
 }
 
@@ -207,6 +202,13 @@
     width: 70%;
     height: 20px;
     margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+    .manaText {
+        font-size: 20px;
+        bottom: 55%;
+    }
 }
 
 .barContainerClassName {
@@ -355,6 +357,7 @@
     letter-spacing: 2px;
     color: white;
     text-transform: uppercase;
+    
 
     text-shadow:
         -2px -2px 0 #000,

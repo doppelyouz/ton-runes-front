@@ -6,7 +6,7 @@ import InviteFriendsDrawer from "../../components/drawers/InviteFriendsDrawer";
 import ManaDrawer from "../../components/drawers/ManaDrawer";
 import StoryDrawer from "../../components/drawers/StoryDrawer";
 
-import base from "/src/assets/GeneralPage/base.png";
+import base from "/src/assets/GeneralPage/base2.png";
 import runeMiddle from "/src/assets/GeneralPage/rune middle.png";
 import rune1 from "/src/assets/GeneralPage/rune 1.png";
 import rune2 from "/src/assets/GeneralPage/rune 2.png";
@@ -29,6 +29,11 @@ function GeneralPage() {
   const [isOpenShop, setIsOpenShop] = useState(false);
   const [isOpenMana, setIsOpenMana] = useState(false);
   const [isOpenStory, setIsOpenStory] = useState(false);
+  
+  // const [screenSize] = useState({
+  //   width: window.innerWidth,
+  //   height: window.innerHeight
+  // });
 
   const toggleInviteFriendsDrawer = useCallback(() => {
     setIsOpenInvite((prevState) => !prevState);
