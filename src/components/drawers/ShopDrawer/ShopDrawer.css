@@ -1,5 +1,3 @@
-
-
 .shopDrawer {
     position: relative;
     max-width: 450px;
@@ -46,7 +44,7 @@
         padding: 0 10px;
         padding-top: 30px;
     }
-    
+
 }
 
 .shopItem {
@@ -77,16 +75,16 @@
 
 .iconWrapper {
     position: relative;
+    width: 55px;
     height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .iconWrapper img {
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: contain;
+    z-index: 10;
 }
 
 .count {
@@ -100,6 +98,7 @@
         2px -2px 0 #000,
         -2px 2px 0 #000,
         2px 2px 0 #000;
+    z-index: 11;
 }
 
 .count.big {
@@ -122,6 +121,7 @@
 .profitTon {
     font-size: 18px;
 }
+
 .profitFehu {
     font-size: 18px;
 }
@@ -142,7 +142,7 @@
     color: white;
     font-size: 30px;
     letter-spacing: 3px;
-    
+
     text-shadow:
         -2px -2px 0 #000,
         2px -2px 0 #000,
