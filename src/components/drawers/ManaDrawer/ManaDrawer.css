@@ -36,6 +36,7 @@
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
 }
@@ -93,11 +94,7 @@
 
 .manaBalance {
     position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 100px;
+    height: 80px;
 }
 
 .manaBalance img {
@@ -121,7 +118,7 @@
     bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
-    width: 40%;
+    width: 70%;
     height: 20px;
     z-index: 2;
 }
