@@ -10,6 +10,7 @@
     font-family: '2157', sans-serif;
     min-height: 80vh;
     max-height: 100vh;
+    height: 100%;
 }
 
 .inviteDrawer::before {
