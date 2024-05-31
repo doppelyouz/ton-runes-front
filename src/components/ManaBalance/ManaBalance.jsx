@@ -5,9 +5,9 @@ import mana from '/src/assets/GeneralPage/mana.png';
 
 import "./ManaBalance.css";
 
-function ManaBalance({ className }) {
+function ManaBalance() {
   return (
-    <div className={`${className}`}>
+    <div className="manaBalance">
       <img src={mana} alt="" />
       <div className="content">
         <p className="manaBalanceText">Mana</p>

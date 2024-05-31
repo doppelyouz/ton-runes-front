@@ -18,7 +18,7 @@ function ManaDrawer({ isOpen, toggleDrawer }) {
       overlayColor={"rgba(0,0,0,0.5)"}
     >
       <div className="manaDrawer">
-        <ManaBalance className="manaBalance" />
+        <ManaBalance />
         <div className="manaDrawerContent">
           <div className="manaDrawerContentText1">
             Мана - сила которая помогает рунам давать ton быстрее
