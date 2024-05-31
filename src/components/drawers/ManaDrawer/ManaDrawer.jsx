@@ -1,7 +1,9 @@
 import Drawer from "react-modern-drawer";
 import GoBackButton from "../../GoBackButton";
 import PropTypes from "prop-types";
-import ManaBalance from "../../ManaBalance";
+import ProgressBar from "@ramonak/react-progress-bar";
+
+import mana from "/src/assets/GeneralPage/mana.png";
 import buyMana from "/src/assets/GeneralPage/buyMana.png";
 
 import "./ManaDrawer.css";
@@ -18,7 +20,20 @@ function ManaDrawer({ isOpen, toggleDrawer }) {
       overlayColor={"rgba(0,0,0,0.5)"}
     >
       <div className="manaDrawer">
-        <ManaBalance />
+        <div className="manaBalance">
+          <img src={mana} alt="" />
+          <p className="manaBalanceText">Mana</p>
+          <ProgressBar
+            completed={60}
+            className="progressBarManaBalance"
+            bgColor="#fec14d"
+            labelColor="black"
+            borderRadius={5}
+            maxCompleted={100}
+            baseBgColor="#204061"
+            barContainerClassName="barContainerClassName"
+          />
+        </div>
         <div className="manaDrawerContent">
           <div className="manaDrawerContentText1">
             Мана - сила которая помогает рунам давать ton быстрее
