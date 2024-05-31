@@ -37,18 +37,15 @@
     border-top-right-radius: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
 }
 
 .manaDrawerContent {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 10px;
     justify-content: center;
+    gap: 10px;
 }
 
 .manaDrawerContentText1 {
@@ -100,6 +97,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    height: 100px;
 }
 
 .manaBalance img {
@@ -123,7 +121,7 @@
     bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
-    width: 70%;
+    width: 40%;
     height: 20px;
     z-index: 2;
 }
