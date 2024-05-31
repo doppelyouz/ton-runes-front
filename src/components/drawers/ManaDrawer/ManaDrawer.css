@@ -36,7 +36,6 @@
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     gap: 10px;
 }
@@ -94,6 +93,10 @@
 
 .manaBalance {
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 80px;
 }
 
@@ -116,9 +119,9 @@
 .progressBarManaBalance {
     position: absolute;
     bottom: 30%;
-    left: 50%;
+    left: 49.5%;
     transform: translateX(-50%);
-    width: 70%;
+    width: 35%;
     height: 20px;
     z-index: 2;
 }
