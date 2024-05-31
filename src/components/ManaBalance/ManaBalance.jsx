@@ -7,7 +7,7 @@ import "./ManaBalance.css";
 
 function ManaBalance({ className }) {
   return (
-    <div className={`manaContainerWrapper ${className}`}>
+    <div className={`${className}`}>
       <img src={mana} alt="" />
       <div className="content">
         <p className="manaBalanceText">Mana</p>
