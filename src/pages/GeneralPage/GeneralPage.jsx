@@ -60,23 +60,23 @@ function GeneralPage() {
         <div className="runeMiddleWrapper">
           <img src={runeMiddle} alt="" />
         </div>
-        <p className="runeMiddleTime">7:59</p>
+        <p className="runeMiddleTime">47:59</p>
         <div className="rune1Wrapper">
           <img src={rune1} alt="" />
         </div>
-        <p className="rune1Time">7:59</p>
+        <p className="rune1Time">47:59</p>
         <div className="rune2Wrapper">
           <img src={rune2} alt="" />
         </div>
-        <p className="rune2Time">7:59</p>
+        <p className="rune2Time">47:59</p>
         <div className="rune3Wrapper">
           <img src={rune3} alt="" />
         </div>
-        <p className="rune3Time">7:59</p>
+        <p className="rune3Time">47:59</p>
         <div className="rune4Wrapper">
           <img src={rune4} alt="" />
         </div>
-        <p className="rune4Time">7:59</p>
+        <p className="rune4Time">47:59</p>
         <button
           type="button"
           onClick={toggleInviteFriendsDrawer}
@@ -101,6 +101,7 @@ function GeneralPage() {
             <ProgressBar
               completed={60}
               className="progressBar"
+              labelAlignment="left"
               bgColor="#fec14d"
               labelColor="black"
               borderRadius={5}

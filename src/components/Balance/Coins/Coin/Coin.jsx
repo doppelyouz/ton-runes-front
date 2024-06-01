@@ -1,18 +1,22 @@
 
 import PropTypes from 'prop-types';
+import withdraw from '/src/assets/ProfilePage/withdraw.png';
+import ton from '/src/assets/ProfilePage/ton.png';
+import fehu from '/src/assets/ProfilePage/fehu.png';
+
 import './Coin.css'
 
-function Coin({ balance, name, special }) {
+function Coin({ balance, name }) {
   return (
     <div className='coin'>
       <div className='coinInner'>
         <p className='balance special'>{balance}</p>
       </div>
-      <div className={`coinName ${special && "special"}`}>
-        {name}
+      <div className={`coinName ${name === "ton" ? "ton" : "fehu"}`}>
+        <img src={name === "ton" ? ton : fehu} alt="" />
       </div>
       <button className='withdraw'>
-        withdraw
+        <img src={withdraw} alt="" />
       </button>
     </div>
   )

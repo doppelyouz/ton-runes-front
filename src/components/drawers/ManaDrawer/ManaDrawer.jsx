@@ -26,6 +26,7 @@ function ManaDrawer({ isOpen, toggleDrawer }) {
           <ProgressBar
             completed={60}
             className="progressBarManaBalance"
+            labelAlignment="left"
             bgColor="#fec14d"
             labelColor="black"
             borderRadius={5}

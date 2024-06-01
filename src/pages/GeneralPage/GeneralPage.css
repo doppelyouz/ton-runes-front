@@ -334,7 +334,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
-    font-size: 20px;
+    font-size: 17px;
     letter-spacing: 2px;
     color: white;
     text-transform: uppercase;
@@ -352,7 +352,7 @@
     top: 12%;
     left: 28%;
     z-index: 3;
-    font-size: 17px;
+    font-size: 14px;
     letter-spacing: 2px;
     color: white;
     text-transform: uppercase;
@@ -370,7 +370,7 @@
     top: 33%;
     left: 28%;
     z-index: 3;
-    font-size: 17px;
+    font-size: 14px;
     letter-spacing: 2px;
     color: white;
     text-transform: uppercase;
@@ -388,7 +388,7 @@
     top: 12%;
     right: 28%;
     z-index: 3;
-    font-size: 17px;
+    font-size: 14px;
     letter-spacing: 2px;
     color: white;
     text-transform: uppercase;
@@ -406,7 +406,7 @@
     top: 33%;
     right: 28%;
     z-index: 3;
-    font-size: 17px;
+    font-size: 14px;
     letter-spacing: 2px;
     color: white;
     text-transform: uppercase;
@@ -421,23 +421,23 @@
 
 @media (max-width: 360px) {
     .rune1Time {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .rune2Time {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .rune3Time {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .rune4Time {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .runeMiddleTime {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
